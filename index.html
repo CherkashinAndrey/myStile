@@ -1,0 +1,61 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="src/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.2.1/lodash.js"></script>
+	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<!-- <script src="bower_components/angular/angular.js"></script> -->
+	<script src="bower_components/slick-carousel/slick/slick.js"></script>
+	<script src="bower_components/angular-slick/dist/slick.js"></script>
+	<!-- <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+	
+
+<!-- 	<nav class="wrapper navbar navbar-default">
+	<ul class="nav navbar-nav">
+		<li><a ui-sref="home()">Home</a></li>
+		<li><a ui-sref="allPosts()">All Posts</a></li>
+		<li><a ui-sref="allPhotos()">All Photos</a></li>
+		<li><a ui-sref="testGetPhotos()">Photo</a></li>
+		<li><a ui-sref="slide()">slide</a></li>
+		<li><a ui-sref="convertCurrency()">Currency</a></li>
+	    <li><a ui-sref="googleMap()">googleMap</a></li>
+	    <li><a ui-sref="userSelect()">users Select</a></li>
+	</ul>
+</nav> -->
+	<!-- <loading></loading> -->
+
+
+	
+	<div ui-view></div>
+
+</body>
+<script src="src/app.js"></script>
+<script src="src/components/header/header.directive.js"></script>
+<script src="src/components/header/header_top/header_top.directive.js"></script>
+<script src="src/components/header/header_content/header_content.directive.js"></script>
+<script src="src/components/header/header_nav/header_nav.directive.js"></script>
+<script src="src/components/content/content.directive.js"></script>
+<script src="src/components/content/left_column/left_column.directive.js"></script>
+<script src="src/components/content/conteiner/conteiner.directive.js"></script>
+<script src="src/components/footer/footer.directive.js"></script>
+
+
+<script src="src/controller/homeController.js"></script>
+<script src="src/service/homeServices.js"></script>
+
+<script src="src/controller/aboutController.js"></script>
+<script src="src/service/aboutServices.js"></script>
+
+
+</html>
