@@ -1,21 +1,67 @@
 <div>
 	<div class="row" ng-modal="date">
-	  <h3>{{date.name}}</h3>
-	  <ul class="col-sm-6 col-md-4">
+	  <h3>{{title}}</h3>
+	  <div class="col-sm-6 col-md-3">
 	    <div class="thumbnail">
 		      <img src="src/foto/1.jpg" alt="...">
 	    </div>
+	    <div>
+	    	<div class="row">
+			  <div class="col-xs-6 col-md-4">
+			    <a href="#" class="thumbnail">
+			      <img src="src/foto/1.jpg" >
+			    </a>
+			  </div>
+			  <div class="col-xs-6 col-md-4">
+			    <a href="#" class="thumbnail">
+			      <img src="src/foto/1.jpg">
+			    </a>
+			  </div>
+			  <div class="col-xs-6 col-md-4">
+			    <a href="#" class="thumbnail">
+			      <img src="src/foto/1.jpg" >
+			    </a>
+			  </div>
+			</div>
+	    </div>
+	  </div>
 	    <div class="caption ">
-			        <div class="">
-				        <span class="">{{305}} грн</span>
-				        <strong class="">{{245}} грн</strong>
-				        <p class="">Артикул: {{3455}}</p>
-			        </div>
-		        </div>
-      		<p>
-      			<a  href="#" class="btn btn-default " role="button">в корзину</a>
-      		</p>
-	  </ul>
+		<p><span>О продукте:</span> {{description}} <p>
+		<p><span>Коллекция:</span> {{season}} <p>
+		<p><span>Состав:</span> {{atribut}} <p>
+		<p><span>Производитель:</span> {{composition}} <p>
+		<p><span>Артикул:</span> {{article}} <p>
+		<p><span>Наличие:</span> {{available}} <p>
+		<p><span>Размер:</span> {{size}} <p>
+
+        <div class="">
+	        <span class="">{{price}} грн</span> 
+	        <strong class=""><span>Цена:</span> {{price / sale}}</strong>
+        </div>
+		</div>
+  		<p>
+  			<a  href="#" class="btn btn-default " role="button">в корзину</a>
+  		</p>
 	</div>
 </div>
 
+<!-- 
+			id: 'id_1',
+            article: '343434',
+            available: true,
+            sale: '10%',
+            sex: 'man',
+            category: 'skirt',
+            season: 'summer',
+            composition: 'Nike',
+            color: 'black',
+            title: 'Майка шифон волан горох',
+            images: [{
+              mainImage: 'image',
+              productGallery: ['image1', 'image2']
+            }],
+            size: ['M','XL'],
+            price: '100$',
+            description: 'Платье приталенного силуэта . Декорировано итальянским кружевом'
+
+ -->

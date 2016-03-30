@@ -33,7 +33,7 @@
         url: '/home/detail/id=:id',
         resolve: {
           data: ['$stateParams','homeServices', function($stateParams, homeServices) {
-            debugger
+            
             return homeServices.getData($stateParams.id);
           }]
     }
@@ -45,7 +45,7 @@
         url: '/about',
         resolve: {
           data: ['$stateParams','aboutServices', function($stateParams, aboutServices) {
-            debugger
+            
             return aboutServices.getData($stateParams.id);
           }]
     }

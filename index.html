@@ -20,24 +20,40 @@
 
 <body>
 	
+<header></header>
 
-<!-- 	<nav class="wrapper navbar navbar-default">
-	<ul class="nav navbar-nav">
-		<li><a ui-sref="home()">Home</a></li>
-		<li><a ui-sref="allPosts()">All Posts</a></li>
-		<li><a ui-sref="allPhotos()">All Photos</a></li>
-		<li><a ui-sref="testGetPhotos()">Photo</a></li>
-		<li><a ui-sref="slide()">slide</a></li>
-		<li><a ui-sref="convertCurrency()">Currency</a></li>
-	    <li><a ui-sref="googleMap()">googleMap</a></li>
-	    <li><a ui-sref="userSelect()">users Select</a></li>
-	</ul>
-</nav> -->
-	<!-- <loading></loading> -->
-
-
-	
+<div class="container">
+	<stil-left-column class="col-md-3"></stil-left-column>
 	<div ui-view></div>
+</div>
+
+<div class="col-md-12">
+
+	  <ul class="pagination">
+	    <li>
+	      <a href="#" aria-label="Previous">
+	        <span aria-hidden="true">&laquo;</span>
+	      </a>
+	    </li>
+	    <li><a href="#">1</a></li>
+	    <li><a href="#">2</a></li>
+	    <li><a href="#">3</a></li>
+	    <li><a href="#">...</a></li>
+	    <li><a href="#">5</a></li>
+	    <li><a href="#">6</a></li>
+	    <li><a href="#">7</a></li>
+	    <li>
+	      <a href="#" aria-label="Next">
+	        <span aria-hidden="true">&raquo;</span>
+	      </a>
+	    </li>
+	  </ul>
+
+</div >
+
+
+<stil-footer class="conteiner"></stil-footer>
+	
 
 </body>
 <script src="src/app.js"></script>
