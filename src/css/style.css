@@ -43,6 +43,30 @@ body {
     font-size: 20px;
 }
 
+header {
+	background: url(/src/img/header/top-hpart-bg.jpg) repeat-x;
+}
+
+
+ /*
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+     reset the text-align 
+    text-align:left;
+     inline-block space fix 
+    margin-right:-4px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+*/
 .navbar-background {
 	background: #df0707;
 }
@@ -73,4 +97,86 @@ body {
 
 .padding-left20 {
 	padding-left: 20px;
+}
+
+.icons {
+	display: inline-block;
+	width: 100%;
+}
+
+.icons li{
+	margin-right: 15px;
+}
+
+.ico-fb a img,
+.ico-vk a img,
+.ico-od a img,
+.ico-gp a img,
+.ico-tw a img,
+.ico-ig a img,
+.ico-fq a img
+{
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin-left: 15px
+}
+
+.ico-fb a img {
+	background: url(/src/img/footer/icons-social.png) 0px 0px no-repeat;
+}
+
+.ico-fb a img:hover {
+	background: url(/src/img/footer/icons-social.png) 0px -25px no-repeat;
+}
+
+.ico-vk a img { 
+	background: url(/src/img/footer/icons-social.png) -25px 0px no-repeat;
+}
+
+.ico-vk a img:hover {
+	background: url(/src/img/footer/icons-social.png) -25px -25px no-repeat;
+}
+
+.ico-od a img {
+	background: url(/src/img/footer/icons-social.png) -50px 0px no-repeat;
+}
+
+.ico-od a img:hover {
+	background: url(/src/img/footer/icons-social.png) -50px -25px no-repeat;
+}
+
+.ico-gp a img {
+	background: url(/src/img/footer/icons-social.png) -75px 0px no-repeat;
+}
+
+.ico-gp a img:hover {
+	background: url(/src/img/footer/icons-social.png) -75px -25px no-repeat;
+}
+
+.ico-tw a img {
+	background: url(/src/img/footer/icons-social.png) -100px 0px no-repeat;
+}
+
+.ico-tw a img:hover {
+	background: url(/src/img/footer/icons-social.png) -100px -25px no-repeat;
+}
+.ico-ig a img {
+	background: url(/src/img/footer/icons-social.png) -125px 0px no-repeat;
+}
+
+.ico-ig a img:hover {
+	background: url(/src/img/footer/icons-social.png) -125px -25px no-repeat;
+}
+.ico-fq a img {
+	background: url(/src/img/footer/icons-social.png) -150px 0px no-repeat;
+}
+
+.ico-fq a img:hover {
+	background: url(/src/img/footer/icons-social.png) -150px -25px no-repeat;
+}
+
+.footer_color {
+	background: #444;
+	color: #575757;
 }
