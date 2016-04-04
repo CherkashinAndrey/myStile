@@ -25,10 +25,11 @@
 
 	<!-- <div class="contents "> -->
 
-		<div class="container  ">
-			<stil-left-column class="col-md-3"></stil-left-column>
-			<div ui-view></div>
-		</div>
+	<div class="container  ">
+		<stil-left-column ng-controller="leftColumnController" class="col-md-3"></stil-left-column>
+		<div ui-view></div>
+	</div>
+
 	<div class="">
 		<div class="contents">
 			<div class="col-md-12 ">
@@ -75,6 +76,7 @@
 
 <script src="src/controller/homeController.js"></script>
 <script src="src/service/homeServices.js"></script>
+<script src="src/controller/leftColumnController.js"></script>
 
 <script src="src/controller/aboutController.js"></script>
 <script src="src/service/aboutServices.js"></script>

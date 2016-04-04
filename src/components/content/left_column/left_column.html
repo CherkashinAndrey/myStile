@@ -1,14 +1,22 @@
-<div>
+<div ng-model="leftMenu">
 	<h4>ФИЛЬТР ТОВАРОВ</h4>
 	<h5>Коллекция</h5>
 	<ul> 
 		<li>
 			<input type="checkbox" >
-			<span>Сезон «весна-лето» ({{2565}})</span>
+			<span>Сезон «лето» ({{leftMenu.summer.length}})</span>
 		</li>
 		<li>
 			<input type="checkbox" >
-			<span>Сезон «осень-зима» ({{25}})</span>
+			<span>Сезон «весна» ({{leftMenu.winter.length}})</span>
+		</li>
+		<li>
+			<input type="checkbox" >
+			<span>Сезон «осень» ({{leftMenu.autumn.length}})</span>
+		</li>
+		<li>
+			<input type="checkbox" >
+			<span>Сезон «зима» ({{leftMenu.spring.length}})</span>
 		</li>
 	</ul>
 
