@@ -6,6 +6,7 @@
 
   function homeController($scope, data) {
   	$scope.dates = data;
+  	//debugger
   	console.log('$scope.dates',$scope.dates);
   }
 

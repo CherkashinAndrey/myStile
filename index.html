@@ -19,41 +19,47 @@
 </head>
 
 <body>
-	
-<header></header>
 
-<div class="container">
-	<stil-left-column class="col-md-3"></stil-left-column>
-	<div ui-view></div>
+<div class="wrapper ">	
+	<header></header>
+
+	<!-- <div class="contents "> -->
+
+		<div class="container  ">
+			<stil-left-column class="col-md-3"></stil-left-column>
+			<div ui-view></div>
+		</div>
+	<div class="">
+		<div class="contents">
+			<div class="col-md-12 ">
+
+				  <ul class="pagination container">
+				    <li>
+				      <a href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				      </a>
+				    </li>
+				    <li><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">...</a></li>
+				    <li><a href="#">5</a></li>
+				    <li><a href="#">6</a></li>
+				    <li><a href="#">7</a></li>
+				    <li>
+				      <a href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				      </a>
+				    </li>
+				  </ul>
+
+			</div >
+		<!-- </div> -->
+
+		<stil-footer class="col-md-12 footer_color footer"></stil-footer>
+		</div>
+	</div>
 </div>
-
-<div class="col-md-12">
-
-	  <ul class="pagination">
-	    <li>
-	      <a href="#" aria-label="Previous">
-	        <span aria-hidden="true">&laquo;</span>
-	      </a>
-	    </li>
-	    <li><a href="#">1</a></li>
-	    <li><a href="#">2</a></li>
-	    <li><a href="#">3</a></li>
-	    <li><a href="#">...</a></li>
-	    <li><a href="#">5</a></li>
-	    <li><a href="#">6</a></li>
-	    <li><a href="#">7</a></li>
-	    <li>
-	      <a href="#" aria-label="Next">
-	        <span aria-hidden="true">&raquo;</span>
-	      </a>
-	    </li>
-	  </ul>
-
-</div >
-
-
-<stil-footer class="col-md-12 footer_color"></stil-footer>
-	
 
 </body>
 <script src="src/app.js"></script>

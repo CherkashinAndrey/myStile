@@ -28,13 +28,12 @@
   })
 
   .state('detail', {
-        controller: 'aboutController',
+        controller: 'homeController',
         templateUrl: 'src/components/template/detail.html',
-        url: '/home/detail/id=:id',
+        url: '/home/detail/id=:index',
         resolve: {
           data: ['$stateParams','homeServices', function($stateParams, homeServices) {
-            
-            return homeServices.getData($stateParams.id);
+            return homeServices.getData($stateParams.index);
           }]
     }
   })

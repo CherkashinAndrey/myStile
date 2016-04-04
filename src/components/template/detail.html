@@ -1,42 +1,32 @@
 <div>
-	<div class="row" ng-modal="date">
-	  <h3>{{title}}</h3>
+	<div class="row" ng-modal="dates">
+	  <h3>{{dates.title}}</h3>
 	  <div class="col-sm-6 col-md-3">
 	    <div class="thumbnail">
-		      <img src="src/foto/1.jpg" alt="...">
+		      <img src="src/foto/{{dates.images[0].mainImage}}.jpg" >
 	    </div>
-	    <div>
+	    <div >
 	    	<div class="row">
-			  <div class="col-xs-6 col-md-4">
+			  <div class="col-xs-6 col-md-4" ng-repeat="images in dates.images[0].productGallery">
 			    <a href="#" class="thumbnail">
-			      <img src="src/foto/1.jpg" >
-			    </a>
-			  </div>
-			  <div class="col-xs-6 col-md-4">
-			    <a href="#" class="thumbnail">
-			      <img src="src/foto/1.jpg">
-			    </a>
-			  </div>
-			  <div class="col-xs-6 col-md-4">
-			    <a href="#" class="thumbnail">
-			      <img src="src/foto/1.jpg" >
+			      <img src="src/foto/{{images}}.jpg" >
 			    </a>
 			  </div>
 			</div>
 	    </div>
 	  </div>
 	    <div class="caption ">
-		<p><span>О продукте:</span> {{description}} <p>
-		<p><span>Коллекция:</span> {{season}} <p>
-		<p><span>Состав:</span> {{atribut}} <p>
-		<p><span>Производитель:</span> {{composition}} <p>
-		<p><span>Артикул:</span> {{article}} <p>
-		<p><span>Наличие:</span> {{available}} <p>
-		<p><span>Размер:</span> {{size}} <p>
+		<p><span>О продукте:</span> {{dates.description}} <p>
+		<p><span>Коллекция:</span> {{dates.season}} <p>
+		<p><span>Состав:</span> {{dates.atribut}} <p>
+		<p><span>Производитель:</span> {{dates.composition}} <p>
+		<p><span>Артикул:</span> {{dates.article}} <p>
+		<p><span>Наличие:</span> {{dates.available}} <p>
+		<p><span>Размер:</span> {{dates.size}} <p>
 
         <div class="">
-	        <span class="">{{price}} грн</span> 
-	        <strong class=""><span>Цена:</span> {{price / sale}}</strong>
+	        <span class="">{{dates.price}} грн</span> 
+	        <strong class=""><span>Цена:</span> {{dates.price-(dates.price*dates.sale)/100}}</strong>
         </div>
 		</div>
   		<p>
@@ -44,24 +34,3 @@
   		</p>
 	</div>
 </div>
-
-<!-- 
-			id: 'id_1',
-            article: '343434',
-            available: true,
-            sale: '10%',
-            sex: 'man',
-            category: 'skirt',
-            season: 'summer',
-            composition: 'Nike',
-            color: 'black',
-            title: 'Майка шифон волан горох',
-            images: [{
-              mainImage: 'image',
-              productGallery: ['image1', 'image2']
-            }],
-            size: ['M','XL'],
-            price: '100$',
-            description: 'Платье приталенного силуэта . Декорировано итальянским кружевом'
-
- -->
