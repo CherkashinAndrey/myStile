@@ -8,29 +8,37 @@
 	    <div >
 	    	<div class="row">
 			  <div class="col-xs-6 col-md-4" ng-repeat="images in dates.images[0].productGallery">
-			    <a href="#" class="thumbnail">
-			      <img src="src/foto/{{images}}.jpg" >
+			    <a href="" class="thumbnail">
+			      <img src="src/foto/{{images}}.jpg" ng-click="setImage(images)" >
 			    </a>
 			  </div>
 			</div>
 	    </div>
 	  </div>
-	    <div class="caption ">
+	  <div class="caption ">
 		<p><span>О продукте:</span> {{dates.description}} <p>
 		<p><span>Коллекция:</span> {{dates.season}} <p>
 		<p><span>Состав:</span> {{dates.atribut}} <p>
 		<p><span>Производитель:</span> {{dates.composition}} <p>
 		<p><span>Артикул:</span> {{dates.article}} <p>
-		<p><span>Наличие:</span> {{dates.available}} <p>
-		<p><span>Размер:</span> {{dates.size}} <p>
+		<p><span>Наличие:</span> <strong class="trueAvailable" ng-show="dates.available">ЕСТЬ В НАЛИЧИИ</strong> 
+								 <strong class="falseAvailable" ng-show="!dates.available">НЕТ ВНАЛИЧИИ</strong>
+		<p>
+		<p><span>Размер:</span> <ul class="radioSize" >
+									<li  ng-repeat="radio in dates.size" class="radioItem">
+									    <input type="radio" name="group1" value=""> {{radio}}
+									</li>
+ 							    </ul> <p>
 
         <div class="">
-	        <span class="">{{dates.price}} грн</span> 
-	        <strong class=""><span>Цена:</span> {{dates.price-(dates.price*dates.sale)/100}}</strong>
+	        <span class="price-old">{{dates.price}} грн</span> 
+	        <strong class="price-new"><span>Цена:</span> {{dates.price-(dates.price*dates.sale)/100}}</strong>
         </div>
-		</div>
-  		<p>
-  			<a  href="#" class="btn btn-default " role="button">в корзину</a>
+	  </div>
+  		<p >
+  			<a href="#" class="btn btn-default" ng-disabled="!dates.available" role="button" >в корзину</a>
   		</p>
 	</div>
 </div>
+
+

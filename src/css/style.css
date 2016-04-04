@@ -52,12 +52,12 @@ body {
 
 
 body {
-    background: #fff;
-    color: #444;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
-    font-size: 20px;
+  background: #fff;
+  color: #444;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
 }
 
 header {
@@ -199,44 +199,56 @@ header {
 }
 
 .name {
-    background-color: #F0F0EE;
-    border: 1px solid #E1E0E0;
-    margin-bottom: 7px;
-    margin-top: -10px;
-    padding: 1px 0 3px;
-    position: relative;
-    
-    overflow: hidden;
+  background-color: #F0F0EE;
+  border: 1px solid #E1E0E0;
+  margin-bottom: 7px;
+  margin-top: -10px;
+  padding: 1px 0 3px;
+  position: relative;
+
+  overflow: hidden;
 }
 
 .name-text {
-    color: #555555;
-    font-weight: normal;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+  color: #555555;
+  font-weight: normal;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .name-text:hover {
-    color: red;
-    text-decoration: none;
+  color: red;
+  text-decoration: none;
 }
 
 
 .price {
-    text-align: center;
-    font-size: 16px;
-    padding: 2px 5px;
-     color: #2d2d2d;
+  text-align: center;
+  font-size: 16px;
+  padding: 2px 5px;
+  color: #2d2d2d;
 }
 
 .price-old {
-    color: #F00;
-    text-decoration: line-through;
+  color: #F00;
+  text-decoration: line-through;
 }
 
+.trueAvailable {
+  color: green;
+}
+
+.falseAvailable {
+  color: red;
+}
+
+.radioItem {
+  display: inline-block;
+  margin-left: 30px;
+}
