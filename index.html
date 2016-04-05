@@ -25,7 +25,7 @@
 
 	<!-- <div class="contents "> -->
 
-	<div class="container  ">
+	<div class="container" ng-controller="rootController">
 		<stil-left-column ng-controller="leftColumnController" class="col-md-3"></stil-left-column>
 		<div ui-view></div>
 	</div>
@@ -74,9 +74,12 @@
 <script src="src/components/footer/footer.directive.js"></script>
 
 
+<script src="src/service/checkedLeftColumnServices.js"></script>
 <script src="src/controller/homeController.js"></script>
+<script src="src/controller/filtersCollectionsController.js"></script>
 <script src="src/service/homeServices.js"></script>
 <script src="src/controller/leftColumnController.js"></script>
+<script src="src/controller/rootController.js"></script>
 
 <script src="src/controller/aboutController.js"></script>
 <script src="src/service/aboutServices.js"></script>

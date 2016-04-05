@@ -44,6 +44,26 @@
             price: 1000,
             description: 'Платье приталенного силуэта с пышной юбкой. Тренд 2014 принт " монетки " Dolce Gabbana . Декорировано итальянским кружевом'
           },
+          {
+            id: 'id_2',
+            article: '5656565',
+            available: true,
+            sale: 25,
+            atribut: 'len',
+            sex: 'woman',
+            category: 'jacket',
+            season: 'winter',
+            composition: 'Diadora',
+            color: 'blue',
+            title: 'White jacket',
+            images: [{
+              mainImage: '2_2',
+              productGallery: ['2_1', '2_3']
+            }],
+            size: ['M','L','XL','XLL'],
+            price: 500,
+            description: 'Платье приталенного силуэта с пышной юбкой. 2016'
+          },
         ]
 
 
