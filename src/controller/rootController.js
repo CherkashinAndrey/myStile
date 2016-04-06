@@ -4,17 +4,12 @@
     .module('app')
     .controller('rootController', rootController);
 
-  function rootController($scope, $rootScope, checkedLeftColumnServices) {
-  	console.log('rootScope', $rootScope);
-
-  	$scope.test = {value: checkedLeftColumnServices.getData()}
-
-    $scope.applyFilters = function() {
-        debugger
+  function rootController($scope, homeServices, checkedLeftColumnServices) {
+   // $scope.leftMenu = homeServices.getData();
     $scope.filtersCollection = checkedLeftColumnServices.getData();
-    $rootScope.filtersCollection = checkedLeftColumnServices.getData();
+    $scope.dates = homeServices.getData();
     console.log('$scope.filtersCollection',$scope.filtersCollection);
-    };
+
 
 
   }

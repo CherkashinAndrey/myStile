@@ -15,7 +15,7 @@
             composition: 'Nike',
             atribut: 'Catton',
             color: 'black',
-            title: 'Майка шифон волан горох',
+            title: 'Майка шифон волан',
             images: [{
               mainImage: '2',
               productGallery: ['2_1', '2_2']
@@ -35,7 +35,7 @@
             season: 'winter',
             composition: 'Diadora',
             color: 'blue',
-            title: 'White jacket',
+            title: 'White jacket1',
             images: [{
               mainImage: '2',
               productGallery: ['2_1', '2_2', '2_3']
@@ -45,7 +45,7 @@
             description: 'Платье приталенного силуэта с пышной юбкой. Тренд 2014 принт " монетки " Dolce Gabbana . Декорировано итальянским кружевом'
           },
           {
-            id: 'id_2',
+            id: 'id_3',
             article: '5656565',
             available: true,
             sale: 25,
@@ -55,7 +55,7 @@
             season: 'winter',
             composition: 'Diadora',
             color: 'blue',
-            title: 'White jacket',
+            title: 'White jacket2',
             images: [{
               mainImage: '2_2',
               productGallery: ['2_1', '2_3']
@@ -64,6 +64,26 @@
             price: 500,
             description: 'Платье приталенного силуэта с пышной юбкой. 2016'
           },
+          {
+            id: 'id_4',
+            article: '11111',
+            available: true,
+            sale: 10,
+            atribut: 'len',
+            sex: 'woman',
+            category: 'jacket',
+            season: 'autumn',
+            composition: 'Diadora',
+            color: 'blue',
+            title: 'White jacket3',
+            images: [{
+              mainImage: '2_2',
+              productGallery: ['2_1', '2_3']
+            }],
+            size: ['M','L','XL','XLL'],
+            price: 333,
+            description: 'Платье приталенного силуэта с пышной юбкой. 2016'
+          }
         ]
 
 

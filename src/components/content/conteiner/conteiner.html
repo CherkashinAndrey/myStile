@@ -1,6 +1,7 @@
 <div>
 	<div class="row" >
-	  <ul class="col-sm-6 col-md-4"  ng-repeat="date in dates | filter : filtersCollection.winter" >
+	  <ul class="col-sm-6 col-md-4"  ng-repeat="date in dates 
+	  														  " >
 	    <div class="thumbnail kollektionGroup" ui-sref="detail({index: $index})">
 		    <img class="kollektionImg" src="src/foto/1.jpg" alt="...">
 		        <p class="kollektionAvailable">
@@ -21,6 +22,8 @@
       		</p>
 	    </div>
 	  </ul>
+	  <pre>{{filtersCollection|json}}</pre>
+	  <pre>{{dates|json}}</pre>
 	</div>
 </div>
 

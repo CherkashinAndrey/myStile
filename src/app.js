@@ -16,7 +16,7 @@
 
   $stateProvider
   .state('home', {
-        controller: 'homeController',
+        controller: 'rootController',
         restrict: 'E',
         url: '/home',
         templateUrl: 'src/components/template/root.html',
@@ -33,6 +33,7 @@
         url: '/home/detail/id=:index',
         resolve: {
           data: ['$stateParams','homeServices', function($stateParams, homeServices) {
+            
             return homeServices.getData($stateParams.index);
           }]
     }
