@@ -51,6 +51,29 @@
     }
   })
 
+  .state('summer', {
+        controller: 'filtersCollectionsController',
+        templateUrl: 'src/components/template/root.html',
+        url: '/summer',
+        resolve: {
+          data: ['$stateParams','checkedLeftColumnServices', function($stateParams, checkedLeftColumnServices) {
+            return checkedLeftColumnServices.getDataSummer();
+          }]
+    }
+  })
+
+  .state('winter', {
+        controller: 'filtersCollectionsController',
+        templateUrl: 'src/components/template/root.html',
+        url: '/winter',
+        resolve: {
+          data: ['$stateParams','checkedLeftColumnServices', function($stateParams, checkedLeftColumnServices) {
+            return checkedLeftColumnServices.getDataWinter();
+          }]
+    }
+  })
+
+
     
     
 

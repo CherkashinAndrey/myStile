@@ -4,7 +4,17 @@
     .module('app')
     .controller('filtersCollectionsController', filtersCollectionsController);
 
-  function filtersCollectionsController($scope, checkedLeftColumnServices) {
+  function filtersCollectionsController($scope, data) {
+
+
+    $scope.filter = data;
+
+    $scope.filters = [...$scope.filter];
+  //  debugger
+
+    //angular.extend($scope.filters, data);
+
+    
 
     // $scope.applyFilters = function() {
     //     debugger

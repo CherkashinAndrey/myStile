@@ -3,16 +3,34 @@
 	<h5><strong>Коллекция:</strong></h5>
 	<ul> 
 		<li>
-			<label><input type="checkbox" name="" ng-click="clickCheckbox('summer')" ng-model="checkedCollection.summer" /> Сезон «лето» ({{leftMenu.summer.length}})</label>
+			<label><input type="checkbox" 
+						  name="" 
+						  ui-sref="summer()" 
+						  ng-click="clickCheckbox('summer')"
+						  ng-model="filtersCollection.summer" 
+						  /> {{filtersCollection.summer}}Сезон «лето» ({{leftMenu.summer.length}})</label>
 		</li>
 		<li>
-			<label><input type="checkbox" name="" ng-click="clickCheckbox('winter')" ng-model="checkedCollection.winter" /> Сезон «зима» ({{leftMenu.winter.length}})</label>
+			<label><input type="checkbox" 
+						  name="" 
+						  ui-sref="winter()" 
+						  ng-model="filtersCollection.winter" 
+						  ng-click="clickCheckbox('winter')"
+						  /> Сезон «зима» ({{leftMenu.winter.length}})</label>
 		</li>
 		<li>
-			<label><input type="checkbox" name="" ng-click="clickCheckbox('autumn')" ng-model="checkedCollection.autumn" /> Сезон «осень» ({{leftMenu.autumn.length}})</label>
+			<label><input type="checkbox" 
+						  name="" 
+						  ng-click="clickCheckbox('autumn')" 
+						  ng-checked="filtersCollection.autumn" 
+						  /> Сезон «осень» ({{leftMenu.autumn.length}})</label>
 		</li>
 		<li>
-			<label><input type="checkbox" name="" ng-click="clickCheckbox('spring')" ng-model="checkedCollection.spring" /> Сезон «весна» ({{leftMenu.spring.length}})</label>
+			<label><input type="checkbox" 
+						  name="" 
+						  ng-click="clickCheckbox('spring')" 
+						  ng-checked="filtersCollection.spring" 
+						  /> Сезон «весна» ({{leftMenu.spring.length}})</label>
 		</li>
 		<!-- <pre>{{checkedCollection|json}}</pre> -->
 	</ul>
@@ -40,6 +58,18 @@
 			<span>Майки ({{4}})</span>
 		</li>
 
+	</ul>
+
+	<h5><strong>Наличие</strong></h5>
+	<ul> 
+		<li>
+			<input type="checkbox" >
+			<span>есть ({{6}})</span>
+		</li>
+		<li>
+			<input type="checkbox" >
+			<span>нету ({{25}})</span>
+		</li>
 	</ul>
 <!-- 	<div ng-controller="filtersCollectionsController">
   		<a href="#" class="btn btn-default" ng-click="applyFilters()" role="button" >Применить</a>

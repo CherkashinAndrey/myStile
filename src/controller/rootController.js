@@ -6,9 +6,10 @@
 
   function rootController($scope, homeServices, checkedLeftColumnServices) {
    // $scope.leftMenu = homeServices.getData();
-    $scope.filtersCollection = checkedLeftColumnServices.getData();
+    $scope.filtersCollection ;//= checkedLeftColumnServices.getData();
     $scope.dates = homeServices.getData();
-    console.log('$scope.filtersCollection',$scope.filtersCollection);
+
+    //console.log('$scope.filtersCollection',$scope.filtersCollection);
 
 
 

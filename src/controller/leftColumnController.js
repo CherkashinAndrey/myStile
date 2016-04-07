@@ -6,23 +6,44 @@
 
   function leftColumnController($scope, checkedLeftColumnServices) {
     //debugger
-    $scope.dates.leftMenu = [];
-
-    $scope.dates.leftMenu = {
-      summer: [],
-      winter: [],
-      autumn: [],
-      spring: []
-
+    $scope.aaa = true
+     $scope.dates.leftMenu = [{
+      summer: [],   //лето 
+      winter: [],   //зима
+      autumn: [],   //осень
+      spring: []    //весна
+    },
+    {
+      Trousers : [] ,  //Брюки 
+      Skirts : [],     //Юбки 
+      Dresses : [],    //Платья 
+      Blouses : [],    //Блузы 
+      tshirts: []     //Майки 
+    },
+    {
+      available_true: [], //наличие есть 
+      available_false: [] //наличие нету 
     }
+    ]
 
+    $scope.clickCheckbox = function(item) {
+       $scope.aaa = !$scope.aaa
+     // $scope.filtersCollection[item] = !$scope.filtersCollection[item];
+      // console.log(item,$scope.filtersCollection[item]);
+       $scope.$applyAsync();
+/*      console.log('clickCheckbox.filtersCollectionDO', $scope.filtersCollection);
+      $scope.filtersCollection = checkedLeftColumnServices.renameData(item);
+      console.log('clickCheckbox.filtersCollection', $scope.filtersCollection);
+     */
+     // $scope.$apply();
+    };
 
   	// $scope.dates.leftMenu.summer = {}; //лето 
   	// $scope.dates.leftMenu.winter = {}; //зима
   	// $scope.dates.leftMenu.autumn = {}; //осень
   	// $scope.dates.leftMenu.spring = {}; //весна
 
-    debugger
+   // debugger
     // $scope.checkedCollection = {
     //   summer: false,
     //   winter: false,
@@ -52,11 +73,7 @@
   	//}
   	//console.log('$scope.leftMenu',$scope.leftMenu);
 
-    $scope.clickCheckbox = function(item, e) {
-      //debugger
-      console.log('item',item);
-      checkedLeftColumnServices.renameData(item)
-    };
+
   }
 
 })();
