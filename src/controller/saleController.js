@@ -6,6 +6,7 @@
 
   function saleController($scope, data) {
       console.log('SALE');
+      $scope.sale = data;
   }
 
 })();

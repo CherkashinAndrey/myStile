@@ -27,18 +27,6 @@
         }     
   })
 
-  .state('detail', {
-        controller: 'homeController',
-        templateUrl: 'src/components/template/detail.html',
-        url: '/home/detail/id=:index',
-        resolve: {
-          data: ['$stateParams','homeServices', function($stateParams, homeServices) {
-            
-            return homeServices.getData($stateParams.index);
-          }]
-    }
-  })
-
   .state('about', {
         controller: 'aboutController',
         templateUrl: 'src/components/template/about.html',
@@ -61,6 +49,18 @@
             }]
       }
     })
+
+    .state('detail', {
+        controller: 'homeController',
+        templateUrl: 'src/components/template/detail.html',
+        url: '/home/detail/id=:index',
+        resolve: {
+          data: ['$stateParams','homeServices', function($stateParams, homeServices) {
+            
+            return homeServices.getData($stateParams.index);
+          }]
+    }
+  })
 
   .state('sale', {
           controller: 'saleController',

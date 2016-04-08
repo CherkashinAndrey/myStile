@@ -1,8 +1,38 @@
 <div class="wrapper ">
 	<div class="row" >
 	    <div class="container" ng-controller="rootController">
-			<stil-left-column ng-controller="leftColumnController" class="col-md-3"></stil-left-column>
-			<h1>SALE PAGE</h1>
+			<stil-left-column ng-controller="leftColumnController" class="col-md-3 row"></stil-left-column>
+
+			<div class="col-md-9 row">
+				<div class="row" >
+				  <ul class="col-sm-3 col-md-4"  ng-repeat="date in sale">
+				    <div class="thumbnail kollektionGroup" ui-sref="detail({index: $index})">
+					    <img class="kollektionImg" src="src/foto/1.jpg" alt="...">
+					        <p class="kollektionAvailable">
+						        <strong class="trueAvailable" ng-show="date.available" >ЕСТЬ В НАЛИЧИИ</strong> 
+								<strong class="falseAvailable" ng-show="!date.available">НЕТ В НАЛИЧИИ</strong>
+							<p>
+					      	<div class="caption ">
+					        	<div class="name">
+					        		<a href="" class="name-text">{{date.title}}</a>
+					        	</div>
+						        <div class="price">
+							        <span class="price-old">{{date.price}} грн</span>
+							        <strong class="price-new">{{date.price-(date.price*date.sale)/100}} грн</strong>
+						        </div>
+					      </div>
+			      		<p class="text-center">
+			      			<a  href="#" class="btn btn-default " ng-disabled="!date.available" role="button">в корзину</a>
+			      		</p>
+				    </div>
+				  </ul>
+				<!--   <pre>{{filtersCollection|json}}</pre>
+				  <pre>{{dates|json}}</pre> -->
+				</div>
+			</div>
+
+		<pagination></pagination>
+		
 	    </div>
 	</div>
 </div>
