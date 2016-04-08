@@ -10,6 +10,7 @@
     $scope.filter = data;
 
     $scope.filters = [...$scope.filter];
+    console.log('$scope.filtersCollection',$scope.filtersCollection)
   //  debugger
 
     //angular.extend($scope.filters, data);

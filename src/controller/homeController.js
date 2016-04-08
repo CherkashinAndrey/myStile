@@ -10,7 +10,6 @@
     //console.log('dsds', $scope.test.value);
 	
   	  $scope.setImage = function(image, e) {
-        
   	    console.log(image);
   	    $scope.dates.images[0].mainImage = image;
       };

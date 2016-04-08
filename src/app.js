@@ -6,8 +6,7 @@
   //.run(run)
 
   function run ($rootScope, $state ) {
-    // loadingService.initLoading();
-    // allPhotosSliderServices.getPhotos();
+
   }
 
   function routes ($stateProvider, $urlRouterProvider) {
@@ -19,7 +18,8 @@
         controller: 'rootController',
         restrict: 'E',
         url: '/home',
-        templateUrl: 'src/components/template/root.html',
+       // templateUrl: 'src/components/template/root.html',
+        templateUrl: 'src/components/template/home.html',
         resolve: {
           data: ['$stateParams','homeServices', function($stateParams, homeServices) {
             return homeServices.getData();
@@ -51,9 +51,32 @@
     }
   })
 
+  .state('product', {
+          controller: 'productController',
+          templateUrl: 'src/components/template/product.html',
+          url: '/product',
+          resolve: {
+            data: ['$stateParams','productServices', function($stateParams, productServices) {
+              return productServices.getData();
+            }]
+      }
+    })
+
+  .state('sale', {
+          controller: 'saleController',
+          templateUrl: 'src/components/template/sale.html',
+          url: '/sale',
+          resolve: {
+            data: ['$stateParams','saleServices', function($stateParams, saleServices) {
+              return saleServices.getData();
+            }]
+      }
+    })
+
+
   .state('summer', {
         controller: 'filtersCollectionsController',
-        templateUrl: 'src/components/template/root.html',
+        templateUrl: 'src/components/template/filter.html',
         url: '/summer',
         resolve: {
           data: ['$stateParams','checkedLeftColumnServices', function($stateParams, checkedLeftColumnServices) {
@@ -64,7 +87,7 @@
 
   .state('winter', {
         controller: 'filtersCollectionsController',
-        templateUrl: 'src/components/template/root.html',
+        templateUrl: 'src/components/template/filter.html',
         url: '/winter',
         resolve: {
           data: ['$stateParams','checkedLeftColumnServices', function($stateParams, checkedLeftColumnServices) {

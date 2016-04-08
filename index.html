@@ -19,48 +19,13 @@
 </head>
 
 <body>
-
-<div class="wrapper ">	
+	
+	<div class="wrapper">
 	<header></header>
-
-	<!-- <div class="contents "> -->
-
-	<div class="container" ng-controller="rootController">
-		<stil-left-column ng-controller="leftColumnController" class="col-md-3"></stil-left-column>
-		<div ui-view></div>
+	<div ui-view class="middle"></div>
+	<stil-footer class="col-md-12 footer_color footer"></stil-footer>
+		
 	</div>
-
-	<div class="">
-		<div class="contents">
-			<div class="col-md-12 ">
-
-				  <ul class="pagination container">
-				    <li>
-				      <a href="#" aria-label="Previous">
-				        <span aria-hidden="true">&laquo;</span>
-				      </a>
-				    </li>
-				    <li><a href="#">1</a></li>
-				    <li><a href="#">2</a></li>
-				    <li><a href="#">3</a></li>
-				    <li><a href="#">...</a></li>
-				    <li><a href="#">5</a></li>
-				    <li><a href="#">6</a></li>
-				    <li><a href="#">7</a></li>
-				    <li>
-				      <a href="#" aria-label="Next">
-				        <span aria-hidden="true">&raquo;</span>
-				      </a>
-				    </li>
-				  </ul>
-
-			</div >
-		<!-- </div> -->
-
-		<stil-footer class="col-md-12 footer_color footer"></stil-footer>
-		</div>
-	</div>
-</div>
 
 </body>
 <script src="src/app.js"></script>
@@ -80,6 +45,10 @@
 <script src="src/service/homeServices.js"></script>
 <script src="src/controller/leftColumnController.js"></script>
 <script src="src/controller/rootController.js"></script>
+<script src="src/controller/productController.js"></script>
+<script src="src/service/productServices.js"></script>
+<script src="src/controller/saleController.js"></script>
+<script src="src/service/saleServices.js"></script>
 
 <script src="src/controller/aboutController.js"></script>
 <script src="src/service/aboutServices.js"></script>

@@ -6,7 +6,7 @@
 
   function leftColumnController($scope, checkedLeftColumnServices) {
     //debugger
-    $scope.aaa = true
+    //$scope.aaa = true
      $scope.dates.leftMenu = [{
       summer: [],   //лето 
       winter: [],   //зима
@@ -27,8 +27,8 @@
     ]
 
     $scope.clickCheckbox = function(item) {
-       $scope.aaa = !$scope.aaa
-     // $scope.filtersCollection[item] = !$scope.filtersCollection[item];
+      // $scope.aaa = !$scope.aaa
+      $scope.filtersCollection[item] = !$scope.filtersCollection[item];
       // console.log(item,$scope.filtersCollection[item]);
        $scope.$applyAsync();
 /*      console.log('clickCheckbox.filtersCollectionDO', $scope.filtersCollection);
