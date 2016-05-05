@@ -1,20 +1,20 @@
-<div ng-model="leftMenu">
+<div ng-model="checkedCollection">
 	<h4><strong>ФИЛЬТР ТОВАРОВ</strong></h4>
 	<h5><strong>Коллекция:</strong></h5>
 	<ul> 
 		<li>
 			<label><input type="checkbox" 
 						  name="" 
-						  ui-sref="summer()" 
 						  ng-click="clickCheckbox('summer')"
-						  ng-model="filtersCollection.summer" 
-						  /> {{filtersCollection.summer}}Сезон «лето» ({{leftMenu.summer.length}})</label>
+						  ui-sref="summer()"
+						  ng-checked="filtersCollection.summer"
+						  /> Сезон «лето» ({{leftMenu.summer.length}})</label>
 		</li>
 		<li>
 			<label><input type="checkbox" 
 						  name="" 
-						  ui-sref="winter()" 
-						  ng-model="filtersCollection.winter" 
+						  ui-sref="winter()"
+						  ng-checked="filtersCollection.winter"
 						  ng-click="clickCheckbox('winter')"
 						  /> {{filtersCollection.winter}}Сезон «зима» ({{leftMenu.winter.length}})</label>
 		</li>

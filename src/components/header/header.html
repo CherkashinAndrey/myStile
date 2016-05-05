@@ -3,113 +3,116 @@
 	<stil-header-content></stil-header-content>
 	<stil-header-nav></stil-header-nav> -->
 
+	<div class="col-md-12" >
+		<!-- <div class=""> -->
+			<div class="col-md-2 vertical">
+				<div class="verticalMiddle">
+				    <span>Валюта</span>
+			        <a title="Украинская гривна" onclick=""><b>UAH</b></a>
+			        <a title="Американский доллар" onclick="">USD</a>
+			    </div>
+			</div>
 
-<div class="col-md-12" >
-	<!-- <div class=""> -->
-		<div class="col-md-2 vertical">
-			<div class="verticalMiddle">
-			    <span>Валюта</span>
-		        <a title="Украинская гривна" onclick=""><b>UAH</b></a>
-		        <a title="Американский доллар" onclick="">USD</a>
+		    <div class="col-md-1 vertical">
+		    	<div class="verticalMiddle">
+				    <a href="#">
+				      <img title="Профиль" alt="Профиль" src="/src/img/header/icon-login.png"> 
+				    </a>	    		
+		    	</div>
 		    </div>
-		</div>
+			
+			<div class="col-md-6 col-md-offset-0 vertical">
+				<ul class="nav-pills  verticalMiddle">
+				    <li class="padding-left20"><a href="#">(066) 248-77-22</a> <span class="divider"></span></li>
+				    <li class="padding-left20"><a href="#">(098) 909-19-56</a> <span class="divider"></span></li>
+				    <li class="padding-left20"><a href="#">(096) 945-89-76</a> <span class="divider"></span></li>
+				</ul>
+			</div>
 
-	    <div class="col-md-1 vertical">
-	    	<div class="verticalMiddle">
-			    <a href="#">
-			      <img title="Профиль" alt="Профиль" src="/src/img/header/icon-login.png"> 
-			    </a>	    		
-	    	</div>
-	    </div>
-		
-		<div class="col-md-6 col-md-offset-0 vertical">
-			<ul class="nav-pills  verticalMiddle">
-			    <li class="padding-left20"><a href="#">(066) 248-77-22</a> <span class="divider"></span></li>
-			    <li class="padding-left20"><a href="#">(098) 909-19-56</a> <span class="divider"></span></li>
-			    <li class="padding-left20"><a href="#">(096) 945-89-76</a> <span class="divider"></span></li>
-			</ul>
-		</div>
+			<div class="vertical col-md-3 ">
+				<div class="input-group verticalMiddle">
+				    <span class="input-group-btn">
+			    	<input type="text" class="search-query form-control" placeholder="Search" />
+				        <button class="btn btn-danger" type="button">
+				            <span class=" glyphicon glyphicon-search"></span>
+				        </button>
+				    </span>
+				</div>
+			</div>
+	</div>
 
-		<div class="vertical col-md-3 ">
-			<div class="input-group verticalMiddle">
-			    <span class="input-group-btn">
-		    	<input type="text" class="search-query form-control" placeholder="Search" />
-			        <button class="btn btn-danger" type="button">
-			            <span class=" glyphicon glyphicon-search"></span>
-			        </button>
-			    </span>
+
+
+	<div class="col-md-12">
+
+		<div class="col-md-3 vertical">
+			<div class="verticalMiddle">
+				<a href="">
+					<img src="src/img/header/logo.png" alt="">
+				</a>
 			</div>
 		</div>
-</div>
 
+		<div class="col-md-6 text-align-centre vertical">
+			<div class="verticalMiddle">
+				<div class="content-title">
+					ИНТЕРНЕТ-МАГАЗИН ЖЕНСКОЙ ОДЕЖДЫ
+				</div>
+				<span class="content-text">
+					Мы производители женской одежды! Производство с 2000 года! Нам 15 лет!
+				</span>
+			</div>
+		</div>
 
-
-<div class="col-md-12">
-
-	<div class="col-md-3 vertical">
-		<div class="verticalMiddle">
-			<a href="">
-				<img src="src/img/header/logo.png" alt="">
-			</a>
+		<div class="col-md-3 vertical">
+			<div class="verticalMiddle">
+				корзинаТоваров: {{0}} ({{0}} грн)
+			</div>
 		</div>
 	</div>
 
-	<div class="col-md-6 text-align-centre vertical">
-		<div class="content-title">
-			ИНТЕРНЕТ-МАГАЗИН ЖЕНСКОЙ ОДЕЖДЫ
-		</div>
-		<span class="content-text">
-			Мы производители женской одежды! Производство с 2000 года! Нам 15 лет!
-		</span>
-	</div>
-
-	<div class="col-md-3 vertical">
-		корзинаТоваров: {{0}} ({{0}} грн)
-	</div>
-</div>
-
-<div class="container">
-	<div class="col-md-12 text-center">
-		<div class=" " >
-		    <ul class="nav navbar-nav navbar-background">
-		    	<!-- <div class="colmd-offset-1"> -->
-		        <li ng-class="{ active: isActive('/')}" ui-sref="home()" ><a href="/">Home</a></li>
-		        <li ng-class="{ active: isActive('/about')}" ui-sref="about()"><a href="/about">О НАС</a></li>
-		        <li ng-class="{ active: isActive('/product')}" ui-sref="product()"> <a href="/product">КАТАЛОГ</a></li>
-		        <li ng-class="{ active: isActive('/sale')}" ui-sref="sale()"><a href="/sale">РАСПРОДАЖА</a></li>
-		        <li ng-class="{ active: isActive('/arhivе')}"><a href="/arhivе">АРХИВ</a></li>
-		        <li ng-class="{ active: isActive('/sizes')}"><a href="/sizes">ТАБЛИЦА РАЗМЕРОВ</a></li>
-		        <li ng-class="{ active: isActive('/payments-and-deliveses')}"><a href="/payments-and-deliveses">ДОСТАВКА И ОПЛАТА</a></li>
-		        <li ng-class="{ active: isActive('/contact')}"><a href="/contact">КОНТАКТЫ</a></li>
-		        <!-- </div> -->
-		    </ul>
+	<div class="container vertical">
+		<div class="col-md-12 text-center verticalMiddle">
+			<div class=" " >
+			    <ul class="nav navbar-nav navbar-background">
+			    	<!-- <div class="colmd-offset-1"> -->
+			        <li ng-class="{ active: isActive('/')}" ui-sref="home()" ><a href="/">Home</a></li>
+			        <li ng-class="{ active: isActive('/about')}" ui-sref="about()"><a href="/about">О НАС</a></li>
+			        <li ng-class="{ active: isActive('/product')}" ui-sref="product()"> <a href="/product">КАТАЛОГ</a></li>
+			        <li ng-class="{ active: isActive('/sale')}" ui-sref="sale()"><a href="/sale">РАСПРОДАЖА</a></li>
+			        <li ng-class="{ active: isActive('/arhivе')}"><a href="/arhivе">АРХИВ</a></li>
+			        <li ng-class="{ active: isActive('/sizes')}"><a href="/sizes">ТАБЛИЦА РАЗМЕРОВ</a></li>
+			        <li ng-class="{ active: isActive('/payments-and-deliveses')}"><a href="/payments-and-deliveses">ДОСТАВКА И ОПЛАТА</a></li>
+			        <li ng-class="{ active: isActive('/contact')}"><a href="/contact">КОНТАКТЫ</a></li>
+			        <!-- </div> -->
+			    </ul>
+			</div>
 		</div>
 	</div>
-</div>
 
-<!-- <div class="container">
-			<div class="col-md-12 text-center">
+	<!-- <div class="container">
+				<div class="col-md-12 text-center">
 
-				  <ul class="pagination">
-				    <li>
-				      <a href="#" aria-label="Previous">
-				        <span aria-hidden="true">&laquo;</span>
-				      </a>
-				    </li>
-				    <li><a href="#">1</a></li>
-				    <li><a href="#">2</a></li>
-				    <li><a href="#">3</a></li>
-				    <li><a href="#">...</a></li>
-				    <li><a href="#">5</a></li>
-				    <li><a href="#">6</a></li>
-				    <li><a href="#">7</a></li>
-				    <li>
-				      <a href="#" aria-label="Next">
-				        <span aria-hidden="true">&raquo;</span>
-				      </a>
-				    </li>
-				  </ul>
-			</div >
-		</div> -->
+					  <ul class="pagination">
+					    <li>
+					      <a href="#" aria-label="Previous">
+					        <span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">...</a></li>
+					    <li><a href="#">5</a></li>
+					    <li><a href="#">6</a></li>
+					    <li><a href="#">7</a></li>
+					    <li>
+					      <a href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					  </ul>
+				</div >
+			</div> -->
 
-</div>
+	</div>

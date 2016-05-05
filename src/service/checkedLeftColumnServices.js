@@ -5,7 +5,7 @@
     .service('checkedLeftColumnServices', checkedLeftColumnServices)
 
 
-  function checkedLeftColumnServices($http) {
+  function checkedLeftColumnServices($http, $rootScope) {
 	checkedCollection = {
       summer: false,
       winter: false,
@@ -19,9 +19,11 @@
     	},
 
       renameData: function ( item ) {
-  	    checkedCollection[item] = !checkedCollection[item];
-        console.log('item',item)
-        return checkedCollection
+         // debugger
+          checkedCollection[item] = !checkedCollection[item];
+          console.log('->',checkedCollection)
+          $rootScope.$applyAsync(checkedCollection);
+          return checkedCollection
       },
 
       getDataSummer: function () {
@@ -50,6 +52,7 @@
       },
 
       getDataWinter: function () {
+          //debugger
         return [{
             id: 'id_2',
             article: '5656565',

@@ -20,12 +20,14 @@
 
 <body>
 	
-	<div class="wrapper">
-	<header></header>
-	<div ui-view class="middle"></div>
-	<stil-footer class="col-md-12 footer_color footer"></stil-footer>
-		
-	</div>
+	<!--<div class="wrapper">-->
+		<header class=""></header>
+		<div ui-view="root" class="middle col-md-12">
+			<div ui-view="leftColumn" class="styleLeftColumn col-md-2"></div>
+			<div ui-view="content" class="styleContent col-md-10"></div>
+		</div>
+		<stil-footer class="col-md-12 footer_color footer"></stil-footer>
+	<!--</div>-->
 
 </body>
 <script src="src/app.js"></script>

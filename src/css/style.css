@@ -83,8 +83,23 @@ body {
   margin: 0;
   padding: 0;
 }
-
-
+/*
+.wrapper {
+    height: 100%;
+    display: table;
+}
+ */
+ 
+.header,
+.content,
+.footer {
+    display: table-row;
+}
+ 
+.header,
+.footer {
+    height: 1px; /* Метод, делающий наш футер "липким" */
+}
 
 
 
