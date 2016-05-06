@@ -56,7 +56,7 @@
                   restrict: 'E',
                   //resolve: {
                   //    data: ['$stateParams','homeServices', function($stateParams, homeServices) {
-                  //        return homeServices.getData();
+                  //        return homeSer  vices.getData();
                   //    }]
                   //}
 
