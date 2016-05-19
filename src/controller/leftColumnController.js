@@ -4,7 +4,7 @@
     .module('app')
     .controller('leftColumnController', leftColumnController);
 
-  function leftColumnController($scope,  checkedLeftColumnServices) {
+  function leftColumnController($scope,  checkedLeftColumnServices, homeServices) {
     //debugger
     $scope.checkedCollection = {
         summer: false,
@@ -12,7 +12,7 @@
         autumn: false,
         spring: false
     };
-      $scope.products = [];
+     // $scope.products = data;
       // $scope.dates.leftMenu = [{
       //  summer: [],   //лето
       //  winter: [],   //зима
@@ -37,7 +37,9 @@
         $scope.checkedCollection = checkedLeftColumnServices.renameData(item);
 
         if (item == 'summer') {
-            $scope.products =  checkedLeftColumnServices.getDataSummer();
+          //  $scope.products =  checkedLeftColumnServices.getDataSummer();
+          $scope.products = homeServices.summerData();
+            $scope.$applyAsync();
             console.log($scope.products);
         } else if(item == 'winter') {
             $scope.products = checkedLeftColumnServices.getDataWinter();

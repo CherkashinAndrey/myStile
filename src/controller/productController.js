@@ -6,8 +6,8 @@
 
   function productController($scope, data) {  
   	console.log('productController');
-	  $scope.products = data;
-	  	console.log('$scope.dates',$scope.products);
+	     $scope.products = data;
+	  	// console.log('$scope.dates',$scope.products);
 	    //console.log('dsds', $scope.test.value);
 		
   	    $scope.setImage = function(image, e) {

@@ -1,11 +1,12 @@
 <!--<div class="wrapper ">-->
 	<div class="row" >
-	    <div class="container" ng-controller="rootController">
+	    <div class="container" ng-controller="leftColumnController">
 			<!--<stil-left-column ng-controller="leftColumnController" class="col-md-3 row"></stil-left-column>-->
 
 			<div class="col-md-9 row">
 				<div class="row" >
 				  <ul class="col-sm-3 col-md-4"  ng-repeat="date in products">
+
 				    <div class="thumbnail kollektionGroup" ui-sref="detail({index: $index})">
 					    <img class="kollektionImg" src="src/foto/1.jpg" alt="...">
 					        <p class="kollektionAvailable">
@@ -31,7 +32,7 @@
 				</div>
 			</div>
 
-		<pagination></pagination>
+			<pagination></pagination>
 		
 	    </div>
 	</div>

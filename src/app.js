@@ -42,52 +42,41 @@
                   templateUrl: "src/components/content/left_column/left_column.html",
                   controller: "leftColumnController",
                   restrict: 'E',
-                  //resolve: {
-                  //    data: ['$stateParams','checkedLeftColumnServices', function($stateParams, checkedLeftColumnServices) {
-                  //        debugger
-                  //        return checkedLeftColumnServices.getData();
-                  //    }]
-                  //}
               },
 
               content: {
                   templateUrl: "src/components/template/product.html",
-                  controller: "leftColumnController",
+                  controller: "productController",
                   restrict: 'E',
-                  //resolve: {
-                  //    data: ['$stateParams','homeServices', function($stateParams, homeServices) {
-                  //        return homeSer  vices.getData();
-                  //    }]
-                  //}
+                  resolve: {
+                     data: ['$stateParams','homeServices', function($stateParams, homeServices) {
+                        console.log('state"summer');
+                         return homeServices.summerData();
+                     }]
+                  }
 
               },
           }
       })
 
       .state('winter', {
-          url: '/product/summer',
+          url: '/product/winter',
           views: {
               leftColumn: {
                   templateUrl: "src/components/content/left_column/left_column.html",
                   controller: "leftColumnController",
                   restrict: 'E',
-                  //resolve: {
-                  //    data: ['$stateParams','checkedLeftColumnServices', function($stateParams, checkedLeftColumnServices) {
-                  //        debugger
-                  //        return checkedLeftColumnServices.getData();
-                  //    }]
-                  //}
               },
 
               content: {
                   templateUrl: "src/components/template/product.html",
-                  controller: "leftColumnController",
+                  controller: "productController",
                   restrict: 'E',
-                  //resolve: {
-                  //    data: ['$stateParams','checkedLeftColumnServices', function($stateParams, checkedLeftColumnServices) {
-                  //        return checkedLeftColumnServices.getDataWinter();
-                  //    }]
-                  //}
+                  resolve: {
+                     data: ['$stateParams','homeServices', function($stateParams, homeServices) {
+                         return homeServices.winterData();
+                     }]
+                  }
               },
           }
       })
@@ -125,6 +114,19 @@
               },
           }
       })
+
+      .state('detail', {
+          controller: 'homeController',
+          templateUrl: 'src/components/template/detail.html',
+          url: '/detail/id=:index',
+          resolve: {
+              data: ['$stateParams','homeServices', function($stateParams, homeServices) {
+
+                  return homeServices.getData($stateParams.index);
+              }]
+          }
+      })
+
 
 
    /*
