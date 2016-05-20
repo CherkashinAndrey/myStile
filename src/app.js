@@ -37,6 +37,7 @@
 
       .state('summer', {
           url: '/product/summer',
+          
           views: {
               leftColumn: {
                   templateUrl: "src/components/content/left_column/left_column.html",
@@ -46,17 +47,19 @@
 
               content: {
                   templateUrl: "src/components/template/product.html",
-                  controller: "productController",
+                  // controller: "productController",
+                  params: {products : null},
                   restrict: 'E',
-                  resolve: {
-                     data: ['$stateParams','homeServices', function($stateParams, homeServices) {
-                        console.log('state"summer');
-                         return homeServices.summerData();
-                     }]
-                  }
+                  // resolve: {
+                  //    data: ['$stateParams','homeServices', function($stateParams, homeServices) {
+                  //       console.log('state"summer');
+                  //        return homeServices.summerData();
+                  //    }]
+                  // }
 
               },
-          }
+          },
+
       })
 
       .state('winter', {

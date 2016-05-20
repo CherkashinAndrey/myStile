@@ -4,7 +4,7 @@
     .module('app')
     .controller('leftColumnController', leftColumnController);
 
-  function leftColumnController($scope,  checkedLeftColumnServices, homeServices) {
+  function leftColumnController($scope,  checkedLeftColumnServices, homeServices, $state) {
     //debugger
     $scope.checkedCollection = {
         summer: false,
@@ -39,6 +39,7 @@
         if (item == 'summer') {
           //  $scope.products =  checkedLeftColumnServices.getDataSummer();
           $scope.products = homeServices.summerData();
+          $state.go("summer", {'products': $scope.products });
             $scope.$applyAsync();
             console.log($scope.products);
         } else if(item == 'winter') {
